@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: white;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Welcome Animation */
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.welcome {
+    font-size: 2em;
+    margin: 20px;
+    animation: fade-in 1s ease-in-out;
+}
+
+/* Button Animation */
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    background-color: #0078D7;
+    color: white;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #005ea6;
+}
+
+/* Secret Animation */
+.hidden-element {
+    display: none;
+    font-size: 1.5em;
+    color: #ffcc00;
+}
+
+.reveal {
+    display: block;
+    animation: fade-in 1s ease-in-out;
+}
